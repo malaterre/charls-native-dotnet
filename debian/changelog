@@ -1,0 +1,5 @@
+charls-native-dotnet (1.0.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #67890)
+
+ -- Mathieu Malaterre <malat@debian.org>  Mon, 26 Apr 2021 14:47:26 +0200

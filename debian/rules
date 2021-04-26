@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+export DH_VERBOSE = 1
+
+%:
+	dh $@
+
+
+override_dh_auto_build:
+	dotnet build
+	dotnet publish
+
+override_dh_auto_clean:
+	dotnet clean || true
+
+#override_dh_auto_install:
+#	dotnet publish
+
+#override_dh_install:
+#	dh_install $(CURDIR)/bin/Debug/CharLS.Native.dll
