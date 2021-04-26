@@ -10,5 +10,5 @@ script:
 
 addons:
  apt:
-  sources:
+  packages:
    - libcharls2
