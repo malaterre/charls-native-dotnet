@@ -3,6 +3,10 @@ dist: focal
 language: csharp
 mono: none
 dotnet: 5.0
+
+before_script:
+  - dpkg -L libcharls2
+
 script:
   - dotnet restore
   - dotnet build
